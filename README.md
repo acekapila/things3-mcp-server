@@ -1,10 +1,6 @@
 # Things 3 MCP Server
 
-<<<<<<< HEAD
 A Model Context Protocol (MCP) server that provides integration with Things 3 and Calendar app on macOS. This server allows AI assistants and other MCP clients to interact with your Things 3 tasks, projects, and areas through a standardized interface.
-=======
-A Model Context Protocol (MCP) server that provides integration with Things 3 on macOS. This server allows AI assistants and other MCP clients to interact with your Things 3 tasks, projects, and areas through a standardized interface.
->>>>>>> bed296d (Initial commit: Things 3 MCP Server)
 
 ## Features
 
@@ -59,7 +55,6 @@ Add the following to your Claude Desktop configuration file:
 {
   "mcpServers": {
     "things3": {
-<<<<<<< HEAD
       "command": "python3",
       "args": ["/path/to/things3_server.py"],
       "env": {}
@@ -67,11 +62,6 @@ Add the following to your Claude Desktop configuration file:
    "calendar": {
       "command": "python3", 
       "args": ["/Users/acekapila/Documents/llm_train/things3-mcp/venv/calendar_server.py"]
-=======
-      "command": "python",
-      "args": ["/path/to/things3_mcp_server.py"],
-      "env": {}
->>>>>>> bed296d (Initial commit: Things 3 MCP Server)
     }
   }
 }
@@ -82,24 +72,10 @@ Add the following to your Claude Desktop configuration file:
 Use the provided `mcp.json` configuration file or run directly:
 
 ```bash
-<<<<<<< HEAD
 python things3_server.py
-=======
-python things3_mcp_server.py
->>>>>>> bed296d (Initial commit: Things 3 MCP Server)
 ```
 
 The server communicates via stdin/stdout, making it compatible with any MCP client.
-
-## Testing
-
-Run the test script to verify the server is working:
-
-```bash
-python test_server.py
-```
-
-This will test basic functionality like listing areas, getting today's overview, and creating a test task.
 
 ### Available Tools
 
@@ -151,8 +127,4 @@ This will test basic functionality like listing areas, getting today's overview,
     - Open Quick Entry panel
     - Parameters: title, notes, autofill
 
-<<<<<<< HEAD
 ###
-=======
-###
->>>>>>> bed296d (Initial commit: Things 3 MCP Server)
