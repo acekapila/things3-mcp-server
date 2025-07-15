@@ -56,7 +56,7 @@ Add the following to your Claude Desktop configuration file:
   "mcpServers": {
     "things3": {
       "command": "python",
-      "args": ["/path/to/things3_mcp_server.py"],
+      "args": ["/path/to/things3_server.py"],
       "env": {}
     }
   }
