@@ -61,7 +61,7 @@ Add the following to your Claude Desktop configuration file:
     },
    "calendar": {
       "command": "python3", 
-      "args": ["/Users/acekapila/Documents/llm_train/things3-mcp/venv/calendar_server.py"]
+      "args": ["/path/to/calendar_server.py"]
     }
   }
 }
