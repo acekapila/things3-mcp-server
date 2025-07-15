@@ -1,6 +1,6 @@
 # Things 3 MCP Server
 
-A Model Context Protocol (MCP) server that provides integration with Things 3 on macOS. This server allows AI assistants and other MCP clients to interact with your Things 3 tasks, projects, and areas through a standardized interface.
+A Model Context Protocol (MCP) server that provides integration with Things 3 and Calendar app on macOS. This server allows AI assistants and other MCP clients to interact with your Things 3 tasks, projects, and areas through a standardized interface.
 
 ## Features
 
@@ -55,9 +55,13 @@ Add the following to your Claude Desktop configuration file:
 {
   "mcpServers": {
     "things3": {
-      "command": "python",
+      "command": "python3",
       "args": ["/path/to/things3_server.py"],
       "env": {}
+    },
+   "calendar": {
+      "command": "python3", 
+      "args": ["/Users/acekapila/Documents/llm_train/things3-mcp/venv/calendar_server.py"]
     }
   }
 }
@@ -68,7 +72,7 @@ Add the following to your Claude Desktop configuration file:
 Use the provided `mcp.json` configuration file or run directly:
 
 ```bash
-python things3_mcp_server.py
+python things3_server.py
 ```
 
 The server communicates via stdin/stdout, making it compatible with any MCP client.
